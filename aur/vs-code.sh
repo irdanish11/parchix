@@ -1,3 +1,4 @@
+# source: https://aur.archlinux.org/packages/visual-studio-code-bin
 # update the pacman package repository cache
 sudo pacman -Sy
 

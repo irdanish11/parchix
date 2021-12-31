@@ -1,6 +1,6 @@
+# source: https://aur.archlinux.org/packages/jetbrains-toolbox/
 cd ~/Downloads
 
-# source: https://aur.archlinux.org/packages/jetbrains-toolbox/
 git clone https://aur.archlinux.org/jetbrains-toolbox.git
 
 cd jetbrains-toolbox

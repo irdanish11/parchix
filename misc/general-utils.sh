@@ -1,2 +1,3 @@
+sudo pacman -S base-devel git 
 # installs vim
-sudo pamac install vim --no-confirm  
+sudo pamac install vim --noconfirm  

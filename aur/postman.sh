@@ -1,3 +1,4 @@
+# source: https://aur.archlinux.org/packages/postman-bin/
 cd ~/Downloads
 
 git clone https://aur.archlinux.org/postman-bin.git

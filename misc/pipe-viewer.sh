@@ -7,11 +7,9 @@ sudo chmod a+rx /usr/local/bin/youtube-dl
 git clone git@github.com:trizen/pipe-viewer.git
 cd pipe-viewer
 
-# install the build essentials
-sudo apt install build-essential
 # configuring Build Module 
 # cpan
-cpan Module::Build
+sudo cpan Module::Build
 
 # installation
 perl Build.PL

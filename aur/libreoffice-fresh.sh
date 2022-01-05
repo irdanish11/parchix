@@ -1,0 +1,1 @@
+sudo pacman -S libreoffice-fresh --noconfirm

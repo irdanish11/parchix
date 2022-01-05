@@ -1,4 +1,4 @@
-# update packages
+
 sudo pacman -Sy
 
 # install vlc

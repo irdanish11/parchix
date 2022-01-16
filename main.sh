@@ -5,7 +5,8 @@ basic_utils () {
 }
 
 
-return_check () {
+return_check () { 
+    printf "\nPress Return/Enter to continue: "    
     read var1
     if [[ $var1 == "" ]]
     then
@@ -158,9 +159,9 @@ list_aur_pacman () {
     browsers
     package_managers
     window_file_managers
-    printf "\nPress Return/Enter to continue: "
-    return_check    
 }
+
+
 
 menu () {
     # clear
@@ -174,32 +175,51 @@ menu () {
 }
 
 
+pacman_aur_installation () {
+        
+    declare -A dict
+    g=("aur/i3-wm.sh" "aur/i3-package.sh"
+       "aur/ranger.sh" "aur/w3imgdisplay.sh")
+    printf "\nSelect category:"
+    read cat
+    var1=${dict[$cat]}
+    printf "\nSelection (e.g. <1 5 7> or all):"
+    read -a arr
+    #echo ${arr[0]}
+    if [[ ${arr[0]} == "all" ]]; then
+        echo ${arr[0]}
+    else
+        for val in "${arr[@]}";
+        do
+            printf "Path = ${g[$val-1]}\n"
+        done
+    fi
+}
 
 main () {
+    # clear
     while :
     do
+        #clear
         menu
         read menu_selection
        
-        if [[ $menu_selection == "a" ]]
-        then
-        elif [[ $menu_selection == "b" ]]
-        then
+        if [[ $menu_selection == "a" ]]; then
+            list_aur_pacman
+            pacman_aur_installation
+
+        elif [[ $menu_selection == "b" ]]; then
             list_aur_pacman
             return_check
 
-        elif [[ $menu_selection == "c" ]]
-        then
+        elif [[ $menu_selection == "c" ]]; then
             echo $menu_selection
 
-        elif [[ $menu_selection == "d" ]]
-        then
+        elif [[ $menu_selection == "d" ]]; then
             misc_pkg
 
-        elif [[ $menu_selection == "q" ]]
-        then
-            echo $menu_selection
-
+        elif [[ $menu_selection == "q" ]]; then
+            exit
         else
             echo $menu_selection
         fi

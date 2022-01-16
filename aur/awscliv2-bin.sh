@@ -1,3 +1,4 @@
+#!/bin/bash
 # source: https://aur.archlinux.org/packages/aws-cli-v2-bin/
 cd ~/Downloads
 

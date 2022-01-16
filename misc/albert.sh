@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ~/Downloads
 git clone --recursive https://github.com/albertlauncher/albert.git
 mkdir albert-build

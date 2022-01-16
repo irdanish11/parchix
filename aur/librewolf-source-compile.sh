@@ -1,3 +1,4 @@
+#!/bin/bash
 cd ~/Downloads
 
 git clone https://aur.archlinux.org/librewolf.git

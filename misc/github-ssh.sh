@@ -1,3 +1,4 @@
+#!/bin/bash
 # configuring global email and name for github
 read -p 'Enter Global Email for Git: ' global_email
 git config --global user.email "$global_email"

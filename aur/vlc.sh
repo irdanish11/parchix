@@ -1,4 +1,4 @@
-
+#!/bin/bash
 sudo pacman -Sy
 
 # install vlc

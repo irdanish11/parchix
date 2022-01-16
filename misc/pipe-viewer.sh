@@ -1,3 +1,4 @@
+#!/bin/bash
 # make sure mpv is already installed
 cd ~/Downloads
 # install youtube-dl

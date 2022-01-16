@@ -1,3 +1,4 @@
+#!/bin/bash
 # source: https://aur.archlinux.org/packages/teams/
 cd ~/Downloads
 

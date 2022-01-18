@@ -1,12 +1,12 @@
 #!/bin/bash
-# source: https://aur.archlinux.org/packages/toggldesktop/
+# source: https://aur.archlinux.org/packages/toggldesktop-bin/
 cd ~/Downloads
 
-git clone https://aur.archlinux.org/toggldesktop.git
-cd toggldesktop
+git clone https://aur.archlinux.org/toggldesktop-bin.git
+cd toggldesktop-bin
 
 makepkg -sir --noconfirm
 
-sudo pacman -U toggldesktop-*.pkg.tar.zst --noconfirm
+sudo pacman -U toggldesktop-bin-*.pkg.tar.zst --noconfirm
 
-cd ../ && sudo rm -rfv toggldesktop/
+cd ../ && sudo rm -rfv toggldesktop-bin/

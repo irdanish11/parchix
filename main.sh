@@ -15,7 +15,7 @@ return_check () {
 }
 
 development () {
-    printf "\nDevelopment:\n"
+    printf "\n1. Development:\n"
     printf "\t1.  VS Code\n"
     printf "\t2.  Vim\n"
     printf "\t3.  Postman\n"
@@ -33,7 +33,7 @@ development () {
 }
 
 communication () {
-    printf "\nCommunication:\n"
+    printf "\n2. Communication:\n"
     printf "\t1.  Mutt Email Client\n"
     printf "\t2.  Mutt Wizard\n"
     printf "\t3.  Session Messenger\n"
@@ -53,7 +53,7 @@ communication () {
 }
 
 utilities () {
-    printf "\nUtilities:\n"
+    printf "\n3. Utilities:\n"
     printf "\t1.  Extreme Download Manager\n"
     printf "\t2.  WPS Office\n"
     printf "\t3.  ULauncher \n"
@@ -85,7 +85,7 @@ utilities () {
 }
 
 media () {
-    printf "\nMedia:\n"
+    printf "\n4. Media:\n"
     printf "\t1.  cmus\n"
     printf "\t2.  mpv\n"
     printf "\t3.  vlc\n"
@@ -95,7 +95,7 @@ media () {
 }
 
 browsers () { 
-    printf "\nBrowsers:\n"
+    printf "\n5. Browsers:\n"
     printf "\t1.  Ungoogled Chromium\n"
     printf "\t2.  Firefox\n"
     printf "\t3.  LibreWolf Binary\n"
@@ -112,7 +112,7 @@ browsers () {
 
 
 package_managers () {
-    printf "\nPackage Managers:\n"
+    printf "\n6. Package Managers:\n"
     printf "\t1.  yay\n"
     printf "\t2.  flatpak\n"
     # aur/yay.sh
@@ -121,7 +121,7 @@ package_managers () {
 
 
 window_file_managers () {
-    printf "\nWindow & File Managers:\n"
+    printf "\n7. Window & File Managers:\n"
     printf "\t1.  i3-wm (i3-wm and i3-status)\n"
     printf "\t2.  i3-Package (i3-gaps, i3-wm, i3blocks, i3lock, i3status)\n"
     printf "\t3.  Ranger\n"
@@ -177,19 +177,21 @@ menu () {
 
 pacman_aur_installation () {
         
-    declare -A dict
-    g=("aur/i3-wm.sh" "aur/i3-package.sh"
-       "aur/ranger.sh" "aur/w3imgdisplay.sh")
+    a=("aur/VS Code" "aur/vim.sh" "aur/postman.sh" "aur/neovim.sh" 
+       "aur/jetbrains-toolbox.sh" "aur/docker.sh" "aur/awscliv2-bin.sh")
+    g=("aur/i3-wm.sh" "aur/i3-package.sh" "aur/ranger.sh" "aur/w3imgdisplay.sh")
     printf "\nSelect category:"
     read cat
-    var1=${dict[$cat]}
-    printf "\nSelection (e.g. <1 5 7> or all):"
-    read -a arr
-    #echo ${arr[0]}
-    if [[ ${arr[0]} == "all" ]]; then
-        echo ${arr[0]}
+    
+    if [[ $cat == "all" ]]; then
+        echo $cat
     else
+        var1=${dict[$cat]}
+        echo $var1
+        printf "\nSelection (e.g. <1 5 7> or all):"
+        read -a arr
         for val in "${arr[@]}";
+        
         do
             printf "Path = ${g[$val-1]}\n"
         done

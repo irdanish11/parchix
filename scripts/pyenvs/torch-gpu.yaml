@@ -1,0 +1,19 @@
+name: torch-gpu
+channels:
+  - pytorch 
+dependencies:
+  - python=3.8
+  - cudatoolkit=11.3
+  - pytorch
+  - torchvision
+  - pip:
+    - numpy
+    - pandas
+    - matplotlib
+    - joblib
+    - easydict
+    - scikit-learn
+    - flask
+    - flask-cors
+    - requests
+    - tqdm

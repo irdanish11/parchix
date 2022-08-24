@@ -1,0 +1,23 @@
+name: tf-gpu
+dependencies:
+  - python=3.8
+  - cudatoolkit=11.3
+  - pip:
+    - tensorflow
+    - keras
+    - numpy
+    - pandas
+    - matplotlib
+    - joblib
+    - easydict
+    - scikit-learn
+    - flask
+    - flask-cors
+    - requests
+    - tqdm
+    - psycopg2
+    - imblearn
+    - ruamel.yaml
+    - seaborn
+    - boto3
+    - sagemaker

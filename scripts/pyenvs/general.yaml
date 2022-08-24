@@ -1,0 +1,22 @@
+name: general
+dependencies:
+  - python=3.8
+  - pip:
+    - numpy
+    - pandas
+    - matplotlib
+    - joblib
+    - easydict
+    - scikit-learn
+    - flask
+    - flask-cors
+    - requests
+    - tqdm
+    - psycopg2
+    - imblearn
+    - ruamel.yaml
+    - seaborn
+    - boto3
+    - sagemaker
+    - gunicorn 
+    - gevent

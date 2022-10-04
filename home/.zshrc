@@ -17,7 +17,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 
 
-plugins=(git branch colored-man-pages colorize command-not-found copypath copyfile emoji history encode64 safe-paste emoji-clock themes pj copybuffer zsh-autosuggestions zsh-syntax-highlighting )
+plugins=(git branch colored-man-pages colorize command-not-found copypath copyfile emoji history encode64 safe-paste emoji-clock themes pj copybuffer zsh-autosuggestions zsh-syntax-highlighting docker ansible kubectl minikube terraform)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -70,8 +70,7 @@ alias b="bash"
 alias jenkins="java -jar /home/danish/jenkins/jenkins.war > /home/danish/jenkins/logs/logs.txt"
 alias n="nvim"
 alias src="source /home/danish/.zshrc"
-alias untracked-size="git diff --binary | wc -c"
-alias staging-size="git diff --cached --binary | wc -c"
+alias dimgid="bash Documents/.docker_imageid.sh"
 
 # directories
 alias s5="cd /run/media/danish/404/Drives/MSDS/Classroom/Semester5"
@@ -101,3 +100,5 @@ complete -o nospace -C /usr/local/bin/terraform terraform
 
 #source '/home/danish/lib/azure-cli/az.completion'
 export PATH=$PATH:/home/danish/.local/share/JetBrains/Toolbox/scripts 
+
+export TERM=xterm-256color

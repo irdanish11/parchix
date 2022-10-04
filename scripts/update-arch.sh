@@ -4,4 +4,4 @@
 #sudo pacman-mirrors -g
 
 # upgrade the system
-sudo pacman -Syu --noconfirm
+sudo pacman -Syu --noconfirm --sudoloop

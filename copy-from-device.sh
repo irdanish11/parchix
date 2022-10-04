@@ -7,8 +7,6 @@ cp -v /home/danish/.vimrc home/
 
 cp -v /home/danish/.zshrc home/
 
-cp -rv /home/danish/.config/cmus/playlists home/.config/cmus/
-
 cp -rv /home/danish/.config/i3 home/.config/
 
 cp -rv /home/danish/.config/kitty home/.config/
@@ -18,4 +16,3 @@ cp -v /home/danish/.config/mpv/mpv.conf home/.config/mpv/
 
 cp -rv /home/danish/.config/neofetch home/.config/
 
-cp -rv /home/danish/.config/ranger home/.config/

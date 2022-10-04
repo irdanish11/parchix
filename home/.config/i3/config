@@ -193,7 +193,7 @@ bindsym $mod+r mode "resize"
 # exec_always "TogglDesktop --background"
 # exec_always "jetbrains-toolbox"
 exec_always "insync start"
-exec_always "transmission-gtk"
+# exec_always "transmission-gtk"
 exec_always "pamixer -u"
 
 # external monitors
@@ -202,7 +202,7 @@ exec_always "pamixer -u"
 #exec_always "xrandr --output HDMI-1-3 --auto --right-of eDP-1 --output DP-1-4  --rotate left --right-of HDMI-1-3"
 #exec_always "xrandr --output HDMI-1-3 --auto --right-of eDP-1 --output DP-1-0  --rotate left --right-of HDMI-1-3"
 #exec_always "xrandr --output HDMI-1-0 --auto --right-of eDP-1 --output DP-1-4  --rotate left --right-of HDMI-1-0"
-exec_always "xrandr --output HDMI-1-0 --auto --right-of eDP-1 --output DP-1-0 --mode 1920x1080 --rotate left --right-of HDMI-1-0"
+#exec_always "xrandr --output HDMI-1-0 --auto --right-of eDP-1 --output DP-1-0 --mode 1920x1080 --rotate left --right-of HDMI-1-0"
 # exec_always "xrandr --output HDMI-1-0 --auto --right-of eDP1 --output DP-1-0  --rotate right  --right-of HDMI-1-0"
 #exec_always "xrandr --output HDMI-0 --auto --right-of eDP1 --output DP-0 --mode 1920x1080 --rotate left --right-of HDMI-1-0"
 
@@ -214,8 +214,8 @@ exec_always "xrandr --output HDMI-1-0 --auto --right-of eDP-1 --output DP-1-0 --
 exec_always "feh --bg-fill /home/danish/Pictures/bg/wallhaven-mpkrx1.jpg"
 
 
-bindsym $mod+F6 exec "backlight_control +10 "
-bindsym $mod+F5 exec "backlight_control -10 "
+bindsym $mod+F6 exec "backlight_control +5 "
+bindsym $mod+F5 exec "backlight_control -5 "
 bindsym $mod+F7 exec "rfkill unblock 1"
 bindsym $mod+F8 exec "rfkill block 1"
 # bindsym $mod+f exec "firefox"
@@ -238,3 +238,17 @@ gaps top 5
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
+# cmus shortcuts
+bindsym mod4+p exec cmus-remote -p
+bindsym mod4+u exec cmus-remote -u
+bindsym mod4+b exec cmus-remote -n
+bindsym mod4+z exec cmus-remote -r
+bindsym mod4+s exec cmus-remote -s
+bindsym mod4+f exec "firefox"
+bindsym mod4+c exec "code"
+
+bindsym mod4+g exec "goland"
+bindsym mod4+py exec "pycharm"
+bindsym mod4+w exec "webstorm"
+bindsym mod4+d exec "datagrip"
+bindsym mod4+i exec "idea"

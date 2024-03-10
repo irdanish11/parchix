@@ -16,6 +16,4 @@ cp -rv /home/danish/.config/kitty home/.config/
 cp -v /home/danish/.config/mpv/input.conf home/.config/mpv/
 cp -v /home/danish/.config/mpv/mpv.conf home/.config/mpv/
 
-cp -rv /home/danish/.config/neofetch home/.config/
-
 cp -rv /home/danish/.config/ranger home/.config/

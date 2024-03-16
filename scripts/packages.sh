@@ -9,4 +9,5 @@ yay -S visual-studio-code-bin postman-bin mongodb-bin mongodb-compass cmus \
        feh xorg-xrandr arandr xclip xsel zathura zotero-bin sysstat youtube-dl \
        pipe-viewer-git wireless_tools unrar tar atool ueberzug highlight lynx \
        odt2txt mediainfo light backlight_control kubectl minikube neofetch \
-       ffmpegthumbnailer insync pamixer xorg-xinput postgresql blight ntfs-3g man acpi --sudoloop --noconfirm
+       ffmpegthumbnailer insync pamixer xorg-xinput postgresql blight ntfs-3g \
+       man acpi zathura-pdf-mupdf redshift-minimal --sudoloop --noconfirm
